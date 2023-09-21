@@ -6,8 +6,9 @@
     max-width: 1500px;
     justify-content: center;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 0px 0px 550px 550px;
-    align-items: center;
     overflow: auto;
 }
 
