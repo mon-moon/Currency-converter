@@ -15,29 +15,28 @@
 </head>
 <body class="body">
     <div class="element">
-    <form class="js-form form">
-        <fieldset class="form__fildset">
-            <legend class="form__legend">Currency converter</legend>
-            <h2 class="form__h2">Polish zloty to Euro</h2>
-            <p>                
-                <label class="form__label">
-    Write amount<input class="js-amount form__input" required name="Write amount here" type="number" min="1" value="100" step="any">
-    zł
-                </label>
-            </p>
-            <p>
-                <label class="form__label">
-                   Exchange rate<input class="js-input-rate form__input" required name="Write exchange rate here" type="number" min="1" value="4.60" step="any">
-                </label>zł
-            </p>
-        </fieldset>
-    </p>
-    <p class="form__converted">Converted amount is <strong class="js-yourcurrency form__yourcurrency">N/a</strong>euro</p>
-    <button class="js-submit form__button">Click to Convert</button>
-    <button type="reset" class="js-reset form__button--clear">Clear form</button>
-
-    </form>
-    
-</div>
+        <form class="js-form form">
+            <fieldset class="form__fildset">
+                <legend class="form__legend">Currency converter</legend>
+                <h2 class="form__h2">Polish zloty to Euro</h2>
+                <p><label class="form__label"> Write amount
+                    <input class="js-amount form__input" required name="Write amount here" type="number" min="1" step="any">zł
+                </label></p>
+                <p>
+                    <label class="form__label">
+                       Exchange rate
+                       <select class="js-selectRate form__input" required name="Write exchange rate here" type="number" min="1" step="any">
+                           <option value="USD">USD</option>
+                           <option value="EUR">EUR</option>
+                           <option value="GBP">GBP</option>
+                       </select>
+                    </label>
+                </p>
+            </fieldset>
+            <button class="js-submit form__button">Click to Convert</button>
+            <button type="reset" class="js-reset form__button--clear">Clear form</button>
+            <p>Converted amount is <strong class="js-yourcurrency form__yourcurrency">N/a</strong></p>
+        </form>
+    </div>
 </body>
 </html>
